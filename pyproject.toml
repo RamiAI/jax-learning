@@ -11,10 +11,16 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
-    "jax>=0.6.0"
+    "jax>=0.6.0",
+    "tensorflow>=2.19.0",
+    "tensorflow-datasets>=4.9.8",
+    "safetensors>=0.5.3"
 ]
 
 [dependency-groups]
+plot = [
+    "matplotlib>=3.10"
+]
 dev = [
     "ruff>=0.11.5",
 ]
